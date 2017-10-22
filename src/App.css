@@ -1,28 +1,18 @@
-.App {
-  text-align: center;
+.container {
+    width: 30vw;
+    height: 30vw;
+    margin: 100px;
+    border: solid 1px;
+    transform: rotate(45deg);
+    transition: transform 2s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.inner {
+    transform: rotate(-45deg);    
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/*Cool spin effect
+.container:hover {
+    transform:  rotateY(180deg) rotate(45deg);
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+*/
