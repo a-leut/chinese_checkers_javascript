@@ -2,7 +2,6 @@
     width: 30vw;
     height: 30vw;
     margin: 100px;
-    border: solid 1px;
     transform: rotate(45deg);
     transition: transform 2s;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Square extends Component {
+export default class Hole extends Component {
   static propTypes = {
     black: PropTypes.bool
   };
