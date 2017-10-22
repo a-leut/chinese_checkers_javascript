@@ -3,23 +3,21 @@ import PropTypes from 'prop-types';
 
 export default class Hole extends Component {
   static propTypes = {
-    black: PropTypes.bool
+    fill: PropTypes.string
   };
 
   render() {
-    const { black } = this.props;
-    const fill = black ? 'black' : 'white';
-    const stroke = black ? 'white' : 'black';
-
-    return (
-      <div style={{
-        backgroundColor: fill,
-        color: stroke,
-        width: '100%',
-        height: '100%'
-      }}>
-        {this.props.children}
-      </div>
-    );
+    const { fill } = this.props;
+    let circle = (children, fill) => {return <div style={{
+      paddingTop: '0.55vw',
+      paddingLeft: '0.55vw',
+      borderRadius: '50%',
+      width: '3vw',
+      height: '3vw',
+      boxShadow: "0 0 0 0.1vw black"
+    }}>
+      {children}
+    </div>}
+    return circle(content, 'black');
   }
 }
