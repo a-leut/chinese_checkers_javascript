@@ -15,7 +15,7 @@ export default class Board extends Component {
     return (
       <div key={i}
            style={{ width: '12.5%', height: '12.5%' }}>
-        {circle}
+        <Hole>{i}</Hole>
       </div>
     );
   }

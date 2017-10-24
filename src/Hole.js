@@ -8,7 +8,7 @@ export default class Hole extends Component {
 
   render() {
     const { fill } = this.props;
-    let circle = (children, fill) => {return <div style={{
+    return <div style={{
       paddingTop: '0.55vw',
       paddingLeft: '0.55vw',
       borderRadius: '50%',
@@ -16,8 +16,11 @@ export default class Hole extends Component {
       height: '3vw',
       boxShadow: "0 0 0 0.1vw black"
     }}>
-      {children}
-    </div>}
-    return circle(content, 'black');
+      <div style={{
+          transform: 'rotate(-45deg)'
+      }}>
+        {this.props.children}
+      </div>
+    </div>
   }
 }
