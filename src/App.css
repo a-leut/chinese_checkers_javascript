@@ -1,7 +1,7 @@
 .container {
     width: 30vw;
     height: 30vw;
-    margin: 100px;
+    margin: 10vw;
     transform: rotate(45deg);
     transition: transform 2s;
 }

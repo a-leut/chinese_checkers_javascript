@@ -14,7 +14,8 @@ export default class Hole extends Component {
       borderRadius: '50%',
       width: '3vw',
       height: '3vw',
-      boxShadow: "0 0 0 0.1vw black"
+      boxShadow: "0 0 0 0.1vw black",
+      backgroundColor: fill
     }}>
       <div style={{
           transform: 'rotate(-45deg)'
